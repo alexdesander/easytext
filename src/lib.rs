@@ -585,9 +585,3 @@ impl<F: Eq + Hash + Copy> EasyText<F> {
         }
     }
 }
-
-struct LineIntermediate {
-    width: f32,
-    // x offset, char
-    chars: Vec<(f32, char)>,
-}

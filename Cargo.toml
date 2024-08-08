@@ -1,7 +1,7 @@
 [package]
 name = "easytext"
 authors = ["alexdesander"]
-version = "0.0.1"
+version = "0.0.2"
 edition = "2021"
 license = "Apache-2.0"
 description = "A dead simple, easy-to-use and basic text rendering library for wgpu."

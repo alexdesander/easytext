@@ -150,7 +150,7 @@ impl<F: Eq + Hash + Copy> Atlas<F> {
             label: Some("EasyText Glyph Atlas Texture Bind Group"),
         });
         // Copy all glyphs to new texture
-        for ((font_id, size, char), glyph) in &mut self.allocated {
+        for (_, glyph) in &mut self.allocated {
             if glyph.metrics.width == 0 || glyph.metrics.height == 0 {
                 continue;
             }
