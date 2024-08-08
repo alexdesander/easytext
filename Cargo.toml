@@ -8,6 +8,9 @@ description = "A dead simple, easy-to-use and basic text rendering library for w
 repository = "https://github.com/alexdesander/easytext"
 keywords = ["wgpu", "text", "font", "gamedev", "graphics"]
 categories = ["game-development", "graphics", "text-processing", "rendering"]
+exclude = [
+    "m5x7.ttf",
+]
 
 [lib]
 name = "easytext"
