@@ -140,6 +140,8 @@ impl App {
             line_height_factor: 0.8,
             top_offset: 0.0,
             left_offset: 0.0,
+            v_align: easytext::VerticalAlign::Middle,
+            h_align: easytext::HorizontalAlign::Center,
         });
 
         Self {

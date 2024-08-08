@@ -4,11 +4,9 @@ use ahash::HashMap;
 use area::TextArea;
 use atlas::Atlas;
 use bytemuck::{Pod, Zeroable};
+pub use fontdue::layout::{HorizontalAlign, VerticalAlign};
 use fontdue::{
-    layout::{
-        CoordinateSystem, HorizontalAlign, Layout, LayoutSettings, TextStyle, VerticalAlign,
-        WrapStyle,
-    },
+    layout::{CoordinateSystem, Layout, LayoutSettings, TextStyle, WrapStyle},
     Font, FontSettings,
 };
 use wgpu::{
@@ -385,8 +383,8 @@ impl<F: Eq + Hash + Copy> EasyText<F> {
                 y: area.y,
                 max_width: Some(area.width),
                 max_height: Some(area.height),
-                horizontal_align: HorizontalAlign::Center,
-                vertical_align: VerticalAlign::Middle,
+                horizontal_align: area.h_align,
+                vertical_align: area.v_align,
                 line_height: area.line_height_factor,
                 wrap_style: WrapStyle::Word,
                 wrap_hard_breaks: true,
