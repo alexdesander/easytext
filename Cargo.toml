@@ -1,0 +1,26 @@
+[package]
+name = "easytext"
+authors = ["alexdesander"]
+version = "0.0.1"
+edition = "2021"
+license = "Apache-2.0"
+description = "A dead simple, easy-to-use and basic text rendering library for wgpu."
+repository = "https://github.com/alexdesander/easytext"
+keywords = ["wgpu", "text", "font", "gamedev", "graphics"]
+categories = ["game-development", "graphics", "text-processing", "rendering"]
+
+[lib]
+name = "easytext"
+path = "src/lib.rs"
+
+[dependencies]
+ahash = { version = "0.8.11", features = ["no-rng"] }
+bytemuck = { version = "1.16.3", features = ["derive"] }
+etagere = "0.2"
+fontdue = "0.9.2"
+lru = "0.12.4"
+wgpu = { version = "22", default-features = false, features = ["wgsl"] }
+
+[dev-dependencies]
+winit = "0.30.4"
+pollster = "0.3.0"
