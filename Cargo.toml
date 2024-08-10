@@ -10,6 +10,7 @@ keywords = ["wgpu", "text", "font", "gamedev", "graphics"]
 categories = ["game-development", "graphics", "text-processing", "rendering"]
 exclude = [
     "m5x7.ttf",
+    "screenshot.png",
 ]
 
 [lib]

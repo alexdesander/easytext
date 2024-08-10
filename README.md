@@ -5,6 +5,8 @@ A dead simple, easy-to-use, and basic text rendering library for wgpu.
 Basically a more basic glyphon "alternative" that doesn't use cosmic-text.
 https://github.com/grovesNL/glyphon
 
+![Screenshot](screenshot.png)
+
 ## Features
 
 - Easy-to-use API for text rendering
